@@ -5,7 +5,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 ```
 #### Dry run to genrate YAML files.
 ```sh
-kubectl run nginx --image=nginx --dry-run=client -o yaml>nginx.yaml
+kubectl run pod --image=nginx --dry-run=client -o yaml>pod.yaml
 ```
 ```sh
 vi pod.yaml
