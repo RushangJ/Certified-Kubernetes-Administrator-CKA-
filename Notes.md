@@ -5,7 +5,7 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 ```
 #### Dry run to genrate YAML files.
 ```sh
-K run nginx --image= nginx --dry-run= client -o yaml > pod.yaml
+kubectl run nginx --image=nginx --dry-run=client -o yaml>nginx.yaml
 ```
 ```sh
 vi pod.yaml
@@ -15,10 +15,7 @@ k create -f pod.yaml
 ```
 #### Delete pod without waiting.
 ```sh
-export now = "--force --grace-period 0"
-```
-```sh
-k delete pod nginx $now
+ kubectl delete pod <POD-NAME> --grace-period=0 --force
 ```
 #### View pod spec defination.
 ```sh
