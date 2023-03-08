@@ -5,4 +5,4 @@ alias kd = kubectl describe\
 alias kdd = kubectl delete\
 alias kgp = kubectl get pods\
 alias kgd= Kubectl get deployments\
-alias wkgp = watch Kubectl get pods\
+alias wkgp = watch Kubectl get pods
