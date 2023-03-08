@@ -3,7 +3,7 @@
 - Understand persistent Volume claims primitive
 - Know How to configure application with persistent volume
 
-Important Topic:
+#Important Topic:
 - Persistent Volume
 - Persistent Volume claims
 - Storage Class
