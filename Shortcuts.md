@@ -7,6 +7,7 @@ vi pod.yaml
 ```
 ```sh
 k create -f pod.yaml
+```
 #### Delete pod without waiting.
 ```sh
 export now = "--force --grace-period 0"
