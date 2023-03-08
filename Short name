@@ -1,1 +1,11 @@
 
+| Short Name | Full Name    |
+| :---:   | :---: |
+| csr | Storage   |
+| cs | Workloads & Scheduling |
+| cm | Services & Networking  |
+| ds | Cluster Architecture, Installation, & Configuration |
+| deploy | Troubleshooting |
+| ep | |
+| ev | |
+| hpa | |
