@@ -36,3 +36,14 @@ k explain pod.spec.containers.resources
 ```sh
 k explain pod.spec.containers.resources.limits
 ```
+#### Set VIM shortcuts profile
+- Go to end of current like → $
+- Go to start of first of current line → 0
+- Go to the last line of the file → G
+- Go to line number → :<desire_line_number>
+- Undo the last change → u
+- Undo the two last changes → 2u
+- Delete contents from cursor to end of file → dG
+- Save and quit quickly → ZZ
+- Quit without saving → ZQ
+- search for “string” → /string
