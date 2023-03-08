@@ -12,3 +12,5 @@
 |  deploy     |  deployments                 |
 |  ep         |  endpoints                   |
 |  ev         |  events                      |
+|  cm        |  configmaps                     |
+
