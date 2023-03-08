@@ -1,35 +1,32 @@
-- Delete pod without waiting:\
-export now = "--force --grace-period 0"\
-k delete pod nginx $now
-
-- k explain pod.spec (view pod spec defination)
-- k explain pod.spec.containers (view the container defination)
-- k explain pod.spec.containers.resources (view the container resources defination)
-- k explain pod.spec.containers.resources.limits (view the container resources limits)
-
-#### Dry run to genrate YAML files:
+#### Dry run to genrate YAML files.
 ```sh
-K run nginx --image= nginx --dry-run= client -o yaml > pod.yaml\
-vi pod.yaml\
+K run nginx --image= nginx --dry-run= client -o yaml > pod.yaml
+```
+```sh
+vi pod.yaml
+```
+```sh
 k create -f pod.yaml
-```
-#### Create a new POD from Nginx Image
+#### Delete pod without waiting.
 ```sh
-kubectl run mywebserver --image=nginx
+export now = "--force --grace-period 0"
 ```
-#### List  the PODS that are currently running.
 ```sh
-kubectl get pods
+k delete pod nginx $now
 ```
-#### Connect inside the POD
+#### View pod spec defination.
 ```sh
-kubectl exec -it mywebserver -- bash
+k explain pod.spec
 ```
-You can come out of the POD with CTRL+D
+#### View the container defination
 ```sh
-kubectl exec -it mywebserver -- ls -l /
+k explain pod.spec.containers
 ```
-#### Delete the POD
+#### View the container resources defination
 ```sh
-kubectl delete pod mywebserver
+k explain pod.spec.containers.resources
+```
+#### View the container resources limits
+```sh
+k explain pod.spec.containers.resources.limits
 ```
