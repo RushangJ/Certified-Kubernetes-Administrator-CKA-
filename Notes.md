@@ -13,6 +13,10 @@ vi pod.yaml
 ```sh
 k create -f pod.yaml
 ```
+#### Replace temp yaml file no need to delete pod, delete pod and create pod
+```sh
+k replace --force -f /tmp/kubectl-edit-1123376299.yaml
+```
 #### Delete pod without waiting.
 ```sh
  kubectl delete pod <POD-NAME> --grace-period=0 --force
