@@ -39,7 +39,9 @@
  ```sh
 kubectl get pods -n kube-system
 ```
-  
-  
+ View Kube-controller-manager options
+  ```sh
+cat /etc/kubernetes/manifests/kube-controller-manager.yaml
+```
   
   
