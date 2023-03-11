@@ -75,6 +75,14 @@ Kube- proxy deploy as a demon sets
 kubectl get deamonset -n kube-system
 ```
 
+#### YAML in Kubernetes:
+
+| Kind | Versiom    |
+| :---:   | :---: |
+| POD | V1   |
+| Service | V1   |
+| ReplicaSet | apps/V1   |
+| Deployment | apps/V1   |
 
 
 
