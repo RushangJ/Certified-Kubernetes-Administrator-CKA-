@@ -30,11 +30,11 @@
 - Type of controller: Node Controller,Replication Controller, Deployment controller, Namespace controller,  and many more...
   - Watch Status
   - Remediate Situation
- - Node Controller:
+   #### Node Controller:
   - Node Monitor Period = 5s
   - Node Monitor Grace Period= 40s
   - POD Eviction Timeout = 5m
- - Replication Controller: 
+   #### Replication Controller: 
   - Replication controller helps us run multiple instances of a single pod in the kubernetes cluster, they provide     heigh avaibility 
  
  
