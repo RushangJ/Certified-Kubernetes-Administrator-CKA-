@@ -27,13 +27,18 @@
 #### Kube controller Manager:
 
 - Controller is a process that continuously monitor state of various components in the system. 
+- Type of controller: Node Controller,Replication Controller, Deployment controller, Namespace controller,  and many more...
   - Watch Status
   - Remediate Situation
   Node Controller:
   - Node Monitor Period = 5s
   - Node Monitor Grace Period= 40s
   - POD Eviction Timeout = 5m
- Replication Controller, Deployment controller, Namespace controller,  and many more...
+  Replication Controller: 
+  - Replication controller helps us run multiple instances of a single pod in the kubernetes cluster, they provide     heigh avaibility 
+ 
+ 
+ 
  
  View Kube-controller-manager
  ```sh
