@@ -43,5 +43,47 @@ kubectl get pods -n kube-system
   ```sh
 cat /etc/kubernetes/manifests/kube-controller-manager.yaml
 ```
+ 
+ #### Kube Scheduler:
+ 
+ - Responsible for only deciding which pod go to which nodes.
+ - How Kube Scheduler decide:
+     1. Filter Nodes ( ex. Based on size )
+     2. Rank Nodes (ex. Priority fuction, Calculate how many cpu will be available after putting new pod based on that decide)    
+ View Kube-scheduler options
+ ```sh
+cat /etc/kubernetes/manifests/kube-scheduler.yaml
+```
+
+#### kubelet:
+
+- Register the nodes within the Kubernetes cluster
+  - Register Node
+  - Create PODs
+  - Monitor Node & PODs
+
+#### Kube Proxy:
+
+- Kube Proxy is a process that runs on each node in the kubernetes cluster, it's job is to look for new services and everytime new service created it's create appropriate rules on each nodes to forward the traffic to these services to the backend pods. 
+-  It's do that with IP table rule, it creates IP table rules on each nodes in the cluster to forward traffic heading to the IP of the service to the IP of the actual pods. 
+ View Kube-proxy
+ ```sh
+kubectl get pods -n kube-system
+```
+Kube- proxy deploy as a demon sets
+ ```sh
+kubectl get deamonset -n kube-system
+```
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   
