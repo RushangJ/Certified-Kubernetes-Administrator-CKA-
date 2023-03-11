@@ -7,3 +7,7 @@
 - Controller Manager: Brain behind orchastration
 - Kube API Server: Agent run on each node
 - Kube- Proxy: To ensure necessary rules apply to worker node
+
+#### ETCD:
+
+-ETCD is a distributed reliable key- value store that is simple, suecure, & fast.
