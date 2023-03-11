@@ -76,6 +76,8 @@ kubectl get deamonset -n kube-system
 ```
 
 
+
+
   
   
   
