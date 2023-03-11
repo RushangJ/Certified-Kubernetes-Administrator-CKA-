@@ -10,4 +10,7 @@
 
 #### ETCD:
 
--ETCD is a distributed reliable key- value store that is simple, suecure, & fast.
+- ETCD is a distributed reliable key- value store that is simple, suecure, & fast.
+- ETCD service listen on port 2379 by default.
+
+
