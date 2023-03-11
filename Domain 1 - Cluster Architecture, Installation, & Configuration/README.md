@@ -35,10 +35,9 @@
   - Node Monitor Grace Period= 40s
   - POD Eviction Timeout = 5m
    #### Replication Controller: 
-  - Replication controller helps us run multiple instances of a single pod in the kubernetes cluster, they provide     heigh avaibility 
- 
- 
- 
+  - Replication controller helps us run multiple instances of a single pod in the kubernetes cluster, Replication controller provide high avaibility.
+  - Load Balancing & Scaling 
+  - Replication controller is a old technology replace by Replica set
  
  View Kube-controller-manager
  ```sh
