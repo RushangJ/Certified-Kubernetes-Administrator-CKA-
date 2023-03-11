@@ -34,6 +34,11 @@
   - Node Monitor Grace Period= 40s
   - POD Eviction Timeout = 5m
  Replication Controller, Deployment controller, Namespace controller,  and many more...
+ 
+ View Kube-controller-manager
+ ```sh
+kubectl get pods -n kube-system
+```
   
   
   
