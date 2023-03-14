@@ -102,6 +102,10 @@ kubectl get deamonset -n kube-system
   - ClusterIP: Help us group the pod together and provide a single interface to access the pods in the group.
   - LoadBalancer
 
+#### Namespaces: 
+
+- Namespaces provides a mechanism for isolating groups of resources within a single cluster.
+
 
 
 
