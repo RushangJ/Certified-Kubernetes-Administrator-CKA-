@@ -18,3 +18,7 @@ or
 ```sh
 kubectl scale --replicas=6 -f replicaset-defination.yaml
 ```
+or 
+```sh
+kubectl scale --replicas=6 -f replicaset myapp-replicaset
+```
