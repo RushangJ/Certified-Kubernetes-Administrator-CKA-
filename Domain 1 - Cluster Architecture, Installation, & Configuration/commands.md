@@ -30,6 +30,13 @@ kubectl create -f deployment-defination.yaml
 ```sh
 kubectl get deployments
 ```
+#### Service - NodePort
+```sh
+kubectl create -f service-defination.yaml
+```
+```sh
+kubectl get services
+```
 
 
 
