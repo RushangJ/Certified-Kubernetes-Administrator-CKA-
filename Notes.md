@@ -27,6 +27,14 @@ kubectl create deployment --image=nginx nginx --dry-run=client -o yaml
 ```sh
 kubectl create deployment --image=nginx --dry-run=client -o yaml > nginx-deployment.yaml
 ```
+#### Create a Service
+```sh
+kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
+```
+Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:
+```sh
+kubectl create service nodeport nginx --tcp=80:80 --node-port=30080 --dry-run=client -o yaml
+```
 #### Replace temp yaml file no need to delete pod, delete pod and create pod
 ```sh
 k replace --force -f /tmp/kubectl-edit-1123376299.yaml
