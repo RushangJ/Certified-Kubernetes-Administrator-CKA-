@@ -4,6 +4,7 @@ kubectl get pods
 ```sh
 kubectl describe pod myapp-pod
 ```
+#### Replicaset
 ```sh
 kubectl create -f replicaset-defination.yaml
 ```
@@ -22,3 +23,33 @@ or
 ```sh
 kubectl scale --replicas=6 -f replicaset myapp-replicaset
 ```
+#### Deployment
+```sh
+kubectl create -f deployment-defination.yaml
+```
+```sh
+kubectl get deployments
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
