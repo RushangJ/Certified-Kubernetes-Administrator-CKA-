@@ -88,7 +88,9 @@ kubectl get deamonset -n kube-system
 | ReplicaSet | apps/V1   |
 | Deployment | apps/V1   |
 
+#### Deployments:
 
+- Deployments provides us the capabilities to upgrade underlying instances simultaneously using roalingupdates undo changes and pods, resume changes as required. 
 
   
   
