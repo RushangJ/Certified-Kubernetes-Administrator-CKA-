@@ -5,13 +5,27 @@ echo "source <(kubectl completion bash)" >> ~/.bashrc # add autocomplete permane
 ```
 #### Dry run to genrate YAML files.
 ```sh
-kubectl run pod --image=nginx --dry-run=client -o yaml>pod.yaml
+kubectl run nginx --image=nginx
+```
+```sh
+kubectl run nginx --image=nginx --dry-run=client -o yaml>pod.yaml
 ```
 ```sh
 vi pod.yaml
 ```
 ```sh
 k create -f pod.yaml
+```
+#### Create a deployment
+```sh
+kubectl create deployment --image=nginx nginx
+```
+#### Generate Deployment YAML file (-o yaml). Don't create it(--dry-run)
+```sh
+kubectl create deployment --image=nginx nginx --dry-run=client -o yaml
+```
+```sh
+kubectl create deployment --image=nginx --dry-run=client -o yaml > nginx-deployment.yaml
 ```
 #### Replace temp yaml file no need to delete pod, delete pod and create pod
 ```sh
