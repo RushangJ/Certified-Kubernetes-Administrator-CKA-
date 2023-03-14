@@ -99,8 +99,8 @@ kubectl get deamonset -n kube-system
   #### Services types:
   
   - NodePort: Helps us by mapping port on the node to the port on the pod.
-  - ClusterIP:
-  - LoadBalancer:
+  - ClusterIP: Help us group the pod together and provide a single interface to access the pods in the group.
+  - LoadBalancer
 
 
 
