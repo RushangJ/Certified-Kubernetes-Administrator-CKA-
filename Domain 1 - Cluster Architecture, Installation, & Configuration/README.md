@@ -92,7 +92,40 @@ kubectl get deamonset -n kube-system
 
 - Deployments provides us the capabilities to upgrade underlying instances simultaneously using roalingupdates undo changes and pods, resume changes as required. 
 
+#### Services:
+
+- Services helps us connect application together with other applications or users.
+
+  #### Services types:
   
+  - NodePort: Helps us by mapping port on the node to the port on the pod.
+  - ClusterIP:
+  - LoadBalancer:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   
   
