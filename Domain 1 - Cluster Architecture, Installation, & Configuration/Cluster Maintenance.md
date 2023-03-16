@@ -44,8 +44,14 @@ systemctl restart kubelet
 ```
 - Now upgrade the worker node.
 
+#### Backup and Restore Methods:
 
-
+- Backup Candidates:
+  - Resource Configuration
+    - Imperative: Imperative way of the creating a object by executing a command.
+    - Declarative: Declarative approch by creating defination (YAML) file.
+  - ETCD Cluster
+  - Persistent Volumes
 
 
 
