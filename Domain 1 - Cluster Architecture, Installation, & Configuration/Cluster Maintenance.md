@@ -50,6 +50,10 @@ systemctl restart kubelet
   - Resource Configuration
     - Imperative: Imperative way of the creating a object by executing a command.
     - Declarative: Declarative approch by creating defination (YAML) file.
+    - Better approch to backing up resource configuration is to query kubeapi server.
+    ```sh
+    kubectl get --all-namespaces =o yaml > all-deploy-services.yaml
+    ```
   - ETCD Cluster
   - Persistent Volumes
 
