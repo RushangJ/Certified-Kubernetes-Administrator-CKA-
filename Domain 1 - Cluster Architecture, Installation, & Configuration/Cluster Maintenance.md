@@ -13,7 +13,7 @@ Step 2: Make node unschedulable.
 kubectl cordon node-1
 ```
 Step 3: Re-boot the first node.
-## Step 4: Make pod schedulable. 
+##### Step 4: Make pod schedulable. 
 ```sh
 kubectl uncordon node-1
 ```
