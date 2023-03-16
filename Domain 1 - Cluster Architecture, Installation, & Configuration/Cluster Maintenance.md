@@ -17,3 +17,44 @@ kubectl cordon node-1
 ```sh
 kubectl uncordon node-1
 ```
+#### Cluster Upgrade Process:
+
+- It is mendetory to for all the components like kube-apiserver. controller-manager, kube-scheduler, kubelet, kube-proxy, and kubectl to have the same version.
+- At any time Kubernetes supports only upto recent 3 minus versions. 
+- Upgrading cluster involves two major steps, First you upgrade your master node and then upgrade worker node.
+- Ex: Upgrade Kubeadm cluster
+```sh
+kubectl upgrade plan #infromation about cluster,give you command to upgrade, current version....
+```
+- Kubeadm - upgrade
+```sh
+apt-get upgrade -y kubeadm=1.12.0-00
+```
+```sh
+kubeadm upgrade apply v1.12.0
+```
+```sh
+kubectl get nodes
+```
+```sh
+apt-get upgrade -y kubelet=1.12.0-00
+```
+```sh
+systemctl restart kubelet
+```
+- Now upgrade the worker node.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
