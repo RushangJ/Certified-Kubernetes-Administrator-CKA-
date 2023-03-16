@@ -55,7 +55,15 @@ systemctl restart kubelet
     kubectl get --all-namespaces =o yaml > all-deploy-services.yaml
     ```
   - ETCD Cluster
-  - Persistent Volumes
+    - ETCD comes up with built in snapshot solution, you can save snapshot of ETCD database by
+    ```sh
+    ETCD_API=3 etcdctl1 \ snapshot save snapshot.db
+    ```
+    - To restore:
+    ```sh
+    ETCD_API=3 etcdctl1 \ snapshot restore snapshot.db \ --data-dir /var/lib/etcd-from-backup
+    ```
+  - Persistent Volumes.
 
 
 
