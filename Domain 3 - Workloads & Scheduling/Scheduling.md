@@ -16,3 +16,14 @@
 - Taints and Tolerations have nothing to do with security on the cluster. Taints and Tolerations used set restriction on what pods can be scheduled on a node.
 - Taints are set on Nodes, and Tolerations set on pods.
 
+#### Node Selectors:
+
+- Select perticuler node to deploy pod.
+
+#### Node Affinity: 
+
+- The primary purpose of node affinity is to ensure PODs are hosted on perticular nodes.
+- Node Affinity Types:
+  - requiredDuringSchedulingIgnoredDuringExecution
+  - PreferredDuringSchedulingIgnoredDuringExecution
+  - requiredDuringSchedulingRequiredDuringExecution (Planned for Future)
