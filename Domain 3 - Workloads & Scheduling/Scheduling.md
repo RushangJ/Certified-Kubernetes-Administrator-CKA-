@@ -1,1 +1,2 @@
-
+- Easiest way to schedule a pod is to simpaly set the node name field to the name of the node in your pod specification file while creating the pod. 
+- Kuberneted doesn't allow you to modify nodename to the pod, so another way to assign a pod is to create a binding object and send the pod request to the pod binding API.
