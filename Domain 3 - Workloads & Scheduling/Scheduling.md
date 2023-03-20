@@ -10,3 +10,9 @@
   ```
 - Kubernetes objects use labels and selector internally to connect diffrent objects together. 
 - Annotations: While labels and selector used for grop the objects. Annotation used to record other details for informative purpose. Ex. buildversion, buildinformation, contact information....etc. 
+
+#### Taints and Tolerations:
+
+- Taints and Tolerations have nothing to do with security on the cluster. Taints and Tolerations used set restriction on what pods can be scheduled on a node.
+- Taints are set on Nodes, and Tolerations set on pods.
+
