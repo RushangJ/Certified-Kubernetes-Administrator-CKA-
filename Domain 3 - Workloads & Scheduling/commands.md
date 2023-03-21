@@ -20,3 +20,26 @@ kubectl label nodes <node-name> <label-key>=<label-value>
 ```sh
 kubectl label nodes node-1 size=Large
 ```
+- View DaemonSets:
+```sh
+kubectl get daemonsets
+```
+```sh
+kubectl describe daemonsets
+```
+- View static pod
+```sh
+docker ps
+```
+- View Scheduler
+```sh
+kubectl get pods --namespace=kube-system
+```
+- View Events
+```sh
+kubectl get events -o wide
+```
+- View Scheduler logs
+```sh
+kubectl logs my-custom-scheduler --name-space=kube-system
+```

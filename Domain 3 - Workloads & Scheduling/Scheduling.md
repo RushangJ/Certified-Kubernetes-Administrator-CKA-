@@ -27,3 +27,24 @@
   - requiredDuringSchedulingIgnoredDuringExecution
   - PreferredDuringSchedulingIgnoredDuringExecution
   - requiredDuringSchedulingRequiredDuringExecution (Planned for Future)
+
+#### Resource Requests:
+
+- By default kubernetes assumes that pod or container within a pod requires 0.5 cpu and 269Mi of memory this is know as Resource request for container. The minimum ammount of cpu or memory requested by the container. 
+- For the pod to pick up those default you must have first set those as default values for request and limit by creating a LimitRange in that namespace.
+
+#### Daemon sets:
+
+- Deamon sets are like replica sets, it will helps you to deploy multiple instances of the pods. But it will run one copy of your pods in each node in your cluster. 
+- Deamon sets make sures always one copy will presents in each node in your cluster. 
+
+#### Static Pods:
+
+- Kubelet can manage pod independently, You cna provide pod defination file on directory on server /etc/kubernetes/manifest/
+- Kubelet read the file periedically run the file and load the file.Kubelet make sure file run all the time.
+- This pod created it's own, created by kubelet called static pod.
+
+#### Multiple Scheduler:
+
+- Kubernetes is highly extensible you can write your own kubernetes scheuling program, package it and deploy it as default scheduler or additional scheduler in kubernetes cluster.
+- Kubernetes can have multiple scheduler. 
