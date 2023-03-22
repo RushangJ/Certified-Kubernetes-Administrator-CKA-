@@ -1,0 +1,11 @@
+# How to pass commandline argument in defination file:
+apiVersion: v1
+kind: pod
+metadata: 
+  name: ubantu-sleeper-pod
+spec:
+  containers:
+  - name: ubuntu-sleeper
+    image: ubunntu-sleeper
+    args: ["10"]
+    
