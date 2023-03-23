@@ -31,4 +31,11 @@
              valueFrom:
                 secreatKeyRef:
 
+#### Init Containers: 
 
+- When a POD is first created the initContainer is run, and the process in the initContainer must run to a completion before the real container hosting the application starts. 
+
+#### Self Healing Applications:
+
+- Kubernetes supports self-healing applications throgh ReplicaSets and Replication Controllers. 
+- The Replication controller helps in ensuring that a POD is re-created automatically when the application within the POD crashes. it helps in ensuring enogh replicas of the application are running at all times. 
