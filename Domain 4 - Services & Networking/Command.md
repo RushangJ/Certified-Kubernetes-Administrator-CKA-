@@ -22,3 +22,9 @@ ip netns add red # Create network namespace
 ```sh
 ip netns # To see the network namespace
 ```
+```sh
+arp
+```
+```sh
+netstart -plnt
+```
